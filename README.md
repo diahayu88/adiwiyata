@@ -2,7 +2,7 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.1.2-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.2.0-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
@@ -11,6 +11,14 @@
 - Siswa dan guru masuk dengan **akun Kelas Raudhah yang sama** (Google, akun sandi, kode kelas, atau Menu Juri).
 - Bila dibuka dari Kelas Raudhah (butir menu **Eco-Gazebo ↗**) di tab yang sama, siswa **tidak perlu masuk ulang**.
 - Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk tong di Recycling Hub untuk melapor, masuk **gerbang bambu** (atau menu ☰ → *Kembali ke Kelas Raudhah*) untuk kembali.
+
+## Baru di v0.2.0
+- **Gazebo realistis**: atap lengkung rusuk bambu laminasi, kaca depan, dinding bilah bambu, lantai kayu, meja-bangku, pot; atap hijau bercorak bunga + 2 panel surya (gaya ringan, tanpa tekstur).
+- **Papan laporan Adiwiyata** di dinding dalam gazebo: peringkat 5 rombel bulan ini + Kompos MBG sekolah, dari data yang sudah diambil setelah masuk (tanpa panggilan server tambahan). Ketuk papan = panel Adiwiyata.
+- **Taman TOGA** di sisi kiri gazebo (sereh, jahe, kunyit, lidah buaya, mint).
+- Jalan setapak di kanan gazebo kini lapang (pohon dan rumpun bambu dipindah).
+- Tulisan papan nama gazebo menyesuaikan lebar bingkai.
+- Muat bertahap: siswa sudah bisa berjalan, gazebo detail menyusul sesaat kemudian. Tekstur dilukis di perangkat (tanpa unduhan tambahan).
 
 ## Arsitektur
 | Bagian | Isi |
