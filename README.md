@@ -2,7 +2,7 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.2.0-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.3.2-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
@@ -10,7 +10,19 @@
 ## Tentang
 - Siswa dan guru masuk dengan **akun Kelas Raudhah yang sama** (Google, akun sandi, kode kelas, atau Menu Juri).
 - Bila dibuka dari Kelas Raudhah (butir menu **Eco-Gazebo ↗**) di tab yang sama, siswa **tidak perlu masuk ulang**.
-- Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk tong di Recycling Hub untuk melapor, masuk **gerbang bambu** (atau menu ☰ → *Kembali ke Kelas Raudhah*) untuk kembali.
+- Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk tong di Recycling Hub untuk melapor, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+
+## Baru di v0.3.2
+- Butir menu **Kembali ke Kelas Raudhah** dihapus; tombol **Beranda** tetap.
+
+## Baru di v0.3.1
+- Perbaikan teknis: aturan tampilan laci untuk HP mendatar dipindah ke luar blok gaya bersama (tampilan sama dengan v0.3.0).
+
+## Baru di v0.3.0
+- **Kelola rombel di Eco** (guru: butir menu ☰ **Kelola rombel**; pemilik: tombol di **Atur Adiwiyata**): daftar rombel + kode kelas, buat rombel, buat akun sandi siswa, siswa per rombel (pindah rombel, aktif/nonaktif, atur ulang sandi), ganti/nonaktifkan kode kelas. Guru melihat rombel buatannya; pemilik melihat semua.
+- **Atur Adiwiyata (pemilik)** kini juga: aktifkan/nonaktifkan guru, tambah guru (Google), akun sandi guru, dan **Log aktivitas** (dengan saringan).
+- **Halaman ringkas**: gapura "Ke Kelas Raudhah" dan bekas halaman Kelas Raudhah dihapus; jalan melingkar gazebo, kolam dan bedeng sayur di depan, gerbang depan segaris gazebo, gedung sekolah sebagai latar. (v0.3.2: butir pindah ke Kelas Raudhah juga dihapus.)
+- Tanpa perubahan server (Code.gs) maupun spreadsheet.
 
 ## Baru di v0.2.0
 - **Gazebo realistis**: atap lengkung rusuk bambu laminasi, kaca depan, dinding bilah bambu, lantai kayu, meja-bangku, pot; atap hijau bercorak bunga + 2 panel surya (gaya ringan, tanpa tekstur).
