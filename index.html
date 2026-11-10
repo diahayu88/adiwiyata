@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco-Gazebo v0.6.0</title>
+<title>Eco-Gazebo v0.7.0</title>
 <style>
 /* UMUM v0.22.0 — sinkronkan dengan Kelas Raudhah: css */
 :root{--bg:#f4f1ea;--fg:#1f2933;--card:#ffffff;--ac:#2f6f4f;--acT:#ffffff;--mut:#5f6b76;--emas:#7a5600}
@@ -160,7 +160,7 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 /* akhir UMUM css */
 /* v0.3.0 (dipindah ke luar blok UMUM di v0.3.1): sama dengan Kelas Raudhah v0.23.0: HP mendatar <= 520 px, garis pemisah laci disembunyikan supaya semua butir muat */
 @media (orientation:landscape) and (max-height:520px){#hud .lGaris{display:none}}
-/* Eco v0.6.0: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
+/* Eco v0.7.0: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
 #hudP,#hudK,#mPapan,#bBerdiri{display:none!important}
 #ovl a{color:var(--ac)} /* tautan layar masuk terbaca di tema gelap (sama dengan Kelas Raudhah v0.23.0) */
 #konfK.pindah .kIk{background:var(--lHm);color:var(--lHt)}#konfK.pindah #kYa{background:#2f6f4f;color:#fff}
@@ -186,6 +186,9 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 #kb .baris button[data-act^="f"][aria-pressed]{flex:1 1 auto}
 /* Eco v0.6.0: panel Hidroponik + Taman TOGA */
 #kb .baris button[data-act^="tg"][aria-pressed]{flex:1 1 auto}#kb .kbBenih button[data-act="f4Sayur"]{min-height:72px}#kb .kbPil .kbTbl td:first-child{width:38%;font-weight:600}
+/* Eco v0.7.0: Bank Sampah */
+#kb .f5Alur{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:4px 0 8px}#kb .f5Alur span{background:var(--lHm);color:var(--lHt);border-radius:8px;padding:3px 8px;font-size:13px;font-weight:600}#kb .f5Alur i{font-style:normal;color:var(--mut)}
+#kb .f5Jml{align-items:center}#kb .f5Jml span{flex:1;text-align:center}#kb .f5Jml button{flex:0 0 64px}#kb tr.f5Me td{background:rgba(67,160,71,.16);font-weight:600}#kb .baris button[data-act^="f5"][aria-pressed]{flex:1 1 auto}
 #kb .kbTbl{border-collapse:collapse;width:100%;font-size:13px}#kb .kbTbl td,#kb .kbTbl th{border-bottom:1px solid rgba(128,128,128,.3);padding:5px 4px;text-align:left;vertical-align:top}
 </style>
 </head>
@@ -196,13 +199,13 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 
 <template id="tpl">
 <a-scene vr-mode-ui="enabled:false" loading-screen="enabled:false" shadow="enabled:false" background="color:#8ecae6" fog="type:linear;color:#dcecf5;near:40;far:150" cursor="rayOrigin:mouse" raycaster="objects:.klik">
-<a-entity id="rig" position="16 -0.45 12.8" batas><a-entity id="cam" camera="fov:70;near:0.1" position="0 1.6 0" look-controls="pointerLockEnabled:false;magicWindowTrackingEnabled:false;touchEnabled:false"></a-entity></a-entity>
+<a-entity id="rig" position="16 -0.45 23.4" batas><a-entity id="cam" camera="fov:70;near:0.1" position="0 1.6 0" look-controls="pointerLockEnabled:false;magicWindowTrackingEnabled:false;touchEnabled:false"></a-entity></a-entity>
 <a-entity light="type:hemisphere;color:#f4f9ff;groundColor:#c3cfae;intensity:1.15"></a-entity>
 <a-entity light="type:directional;color:#fff2da;intensity:0.7" position="-3 6 4"></a-entity>
 <a-entity id="dunia"></a-entity>
 </a-scene>
 </template>
-<script src="eco_v0.6.0.js"></script>
-<!-- akhir Eco-Gazebo v0.6.0 -->
+<script src="eco_v0.7.0.js"></script>
+<!-- akhir Eco-Gazebo v0.7.0 -->
 </body>
 </html>
