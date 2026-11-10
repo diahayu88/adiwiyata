@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco-Gazebo v0.3.2</title>
+<title>Eco-Gazebo v0.4.0</title>
 <style>
 /* UMUM v0.22.0 — sinkronkan dengan Kelas Raudhah: css */
 :root{--bg:#f4f1ea;--fg:#1f2933;--card:#ffffff;--ac:#2f6f4f;--acT:#ffffff;--mut:#5f6b76;--emas:#7a5600}
@@ -160,10 +160,26 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 /* akhir UMUM css */
 /* v0.3.0 (dipindah ke luar blok UMUM di v0.3.1): sama dengan Kelas Raudhah v0.23.0: HP mendatar <= 520 px, garis pemisah laci disembunyikan supaya semua butir muat */
 @media (orientation:landscape) and (max-height:520px){#hud .lGaris{display:none}}
-/* Eco v0.3.2: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
+/* Eco v0.4.0: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
 #hudP,#hudK,#mPapan,#bBerdiri{display:none!important}
 #ovl a{color:var(--ac)} /* tautan layar masuk terbaca di tema gelap (sama dengan Kelas Raudhah v0.23.0) */
 #konfK.pindah .kIk{background:var(--lHm);color:var(--lHt)}#konfK.pindah #kYa{background:#2f6f4f;color:#fff}
+/* Eco v0.4.0: panel Kebun Simulasi (F1). HP tegak: panel ringkas 44 % layar supaya bedeng (kamera setinggi tanaman) tetap terlihat di atasnya */
+@media (orientation:portrait){#kartu.kebun:not(.penuh){height:44vh;height:44dvh}#kartu.kebun #ka{display:none}#kartu.kebun .kbLns{display:grid;grid-template-columns:1fr 1fr;column-gap:12px}#kartu.kebun .kbLn b{width:50px}#kartu.kebun .kbF{display:none}#kartu.kebun .kbLn .kbP{display:inline}#kartu.kebun .kbLn em{width:38px}}
+#panel:has(#kartu.kebun){background:rgba(15,23,20,.08)}
+#kb .kbInfo{display:flex;justify-content:space-between;gap:8px;font-size:14px;margin:0 0 2px}
+#kb .kbJam{display:block;height:5px;border-radius:3px;background:rgba(128,128,128,.25);overflow:hidden;margin:3px 0}#kb .kbJam i{display:block;height:100%;background:#64b5f6;transition:width .4s linear}
+#kb .kbTh{display:flex;gap:3px;margin:0 0 4px}#kb .kbTh i{flex:1;height:5px;border-radius:3px;background:rgba(128,128,128,.25)}#kb .kbTh i.on{background:var(--ac)}
+#kb .kbP{display:none}#kb .kbLn{display:flex;align-items:center;gap:8px;margin:2px 0;font-size:14px}#kb .kbLn b{width:82px;font-weight:600;flex:none}#kb .kbLn em{width:44px;text-align:right;font-style:normal;font-weight:700;flex:none}
+#kb .kbBar{flex:1;height:11px;border-radius:6px;background:rgba(128,128,128,.22);position:relative;overflow:hidden}#kb .kbBar u{position:absolute;top:0;bottom:0;background:rgba(76,175,80,.22);border-left:2px solid var(--ac);border-right:2px solid var(--ac)}#kb .kbBar i{position:absolute;left:0;top:2px;bottom:2px;border-radius:4px;transition:width .4s}
+#kb .kbMsg{border-left:5px solid #43a047;background:rgba(67,160,71,.14);border-radius:8px;padding:7px 10px;font-size:14px;margin:6px 0}#kb .kbMsg.w{border-color:#f9a825;background:rgba(249,168,37,.16)}#kb .kbMsg.b{border-color:#e53935;background:rgba(229,57,53,.14)}
+#kb .kbAksi{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+#kb .kbPil{padding:8px;border-radius:10px;background:rgba(128,128,128,.12);margin:4px 0}#kb .kbPil p{margin:0 0 4px;font-size:14px}#kb .kbPil .baris button{flex:1 1 100%}
+#kb .kbBenih{display:grid;grid-template-columns:1fr 1fr;gap:8px}#kb .kbBenih button{text-align:left;min-height:56px;line-height:1.25}#kb .kbBenih b{display:block;color:var(--ac)}#kb .kbBenih small{display:block;font-size:12px}
+#kb .kbLog{font-size:13px;max-height:160px;overflow:auto;padding-left:20px;margin:4px 0}
+#kb .kbLenc span{display:inline-block;background:var(--lEm);color:var(--lEmT);border-radius:12px;padding:2px 9px;font-size:12px;margin:2px}
+#kb details{margin:6px 0}#kb summary{cursor:pointer;font-weight:600;padding:12px 0;color:var(--fg)}
+#kb .kbTbl{border-collapse:collapse;width:100%;font-size:13px}#kb .kbTbl td,#kb .kbTbl th{border-bottom:1px solid rgba(128,128,128,.3);padding:5px 4px;text-align:left;vertical-align:top}
 </style>
 </head>
 <body>
@@ -179,7 +195,7 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 <a-entity id="dunia"></a-entity>
 </a-scene>
 </template>
-<script src="eco_v0.3.2.js"></script>
-<!-- akhir Eco-Gazebo v0.3.2 -->
+<script src="eco_v0.4.0.js"></script>
+<!-- akhir Eco-Gazebo v0.4.0 -->
 </body>
 </html>
