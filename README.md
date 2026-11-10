@@ -2,7 +2,7 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.4.0-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.5.0-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
@@ -10,7 +10,15 @@
 ## Tentang
 - Siswa dan guru masuk dengan **akun Kelas Raudhah yang sama** (Google, akun sandi, kode kelas, atau Menu Juri).
 - Bila dibuka dari Kelas Raudhah (butir menu **Eco-Gazebo ↗**) di tab yang sama, siswa **tidak perlu masuk ulang**.
-- Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **bedeng** untuk Kebun Simulasi, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+- Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **bedeng** untuk Kebun Simulasi, **tutup sumur** untuk Sumur Resapan, **kotak panel** di dinding kanan gazebo untuk PLTS, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+
+## Baru di v0.5.0
+- **Sumur Resapan** (ketuk tutup sumur atau papannya, di belakang kanan gazebo): pilih hujan ringan 10 / sedang 30 / lebat 75 mm, bandingkan *dengan* dan *tanpa sumur*. Potongan melintang menunjukkan talang → pipa → sumur terisi, meluap ke kolam, atau menggenang. Tabel volume dari atap gazebo 53 m², syarat SNI 8456:2017, dan tantangan hitung jumlah sumur.
+- **PLTS & Panel Listrik** (ketuk kotak panel yang kini **terbuka**: SCC, inverter, MCB DC/AC, meteran kWh, baterai, arde):
+  - **Daya & cuaca**: jam (pagi/siang/sore/malam), cuaca, beban (lampu, kipas, pompa hidroponik, pengisi HP) → daya panel, baterai mengisi/dipakai, kWh hari ini, CO₂ yang dihindari. Malam + lampu menyala → **3 lampu gazebo menyala**.
+  - **Rakit instalasi**: 3 tantangan menyusun panel surya → MCB DC → SCC → baterai → (inverter → MCB AC → meteran kWh) → lampu + arde; setiap kesalahan dijelaskan. Lencana tersimpan di perangkat.
+  - **Keselamatan & perawatan**: fungsi MCB dan arde, membersihkan panel, menghindari bayangan; simulasi saja, instalasi nyata oleh teknisi.
+- Tanpa perubahan server (Code.gs) maupun spreadsheet.
 
 ## Baru di v0.4.0
 - **Kebun Simulasi tanam–panen** di bedeng depan: ketuk bedeng (atau papan *Kebun Simulasi*), pilih benih (kangkung, sawi/pakcoy, bayam, cabai rawit, tomat), lalu rawat dengan **Siram**, **Pupuk NPK**, dan **Kompos MBG**. Air, hara, garam, kesehatan, dan bahan organik berubah menurut aturan sebab-akibat yang bersumber (zona air 60–80 %, tanah jenuh, kekeringan, pupuk berlebih, kompos belum matang). Tanaman 3D ikut berubah: sehat, terlalu basah (kuning + genangan), kering (terkulai + tanah retak), pupuk berlebih (ujung cokelat), berbunga/berbuah, mati. Panen memberi nilai A/B/C dan lencana.
