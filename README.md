@@ -2,7 +2,7 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.7.0-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.7.1-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
@@ -12,6 +12,11 @@
 - Bila dibuka dari Kelas Raudhah (butir menu **Eco-Gazebo ↗**) di tab yang sama, siswa **tidak perlu masuk ulang**.
 - Saat pertama masuk, kamu berdiri **di depan gapura** halaman Eco; ketuk tanah di dalam halaman untuk berjalan masuk lewat gerbang.
 - Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk **meja timbang** atau **papan nilai poin** di Bank Sampah untuk Buku Tabungan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **bedeng** untuk Kebun Simulasi, **tutup sumur** untuk Sumur Resapan, **kotak panel** di dinding kanan gazebo untuk PLTS, **rumah hidroponik** untuk Hidroponik NFT, **bedeng/papan Taman TOGA** untuk mengenal tanaman obat keluarga, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+
+## Baru di v0.7.1
+- Papan gapura kini bertuliskan **ECO GAZEBO · MTs Negeri 7 Kediri**.
+- **Monumen Adiwiyata Mandiri** di pelataran depan gapura; ketuk plakatnya untuk mengenal jenjang penghargaan Adiwiyata.
+- **Alat ukur kelembapan tanah** di Kebun Simulasi: jarum dengan 5 zona warna (kering, kurang, pas, basah, tergenang), angka persen, saran berapa gayung perlu disiram atau berapa hari menunda, riwayat 7 hari, dan alat ukur 3D di bedeng yang berubah warna. Pilihan siram menampilkan hasilnya (mis. "1 gayung → 80 %").
 
 ## Baru di v0.7.0
 - **Mulai di depan gapura**: saat pertama masuk, siswa berdiri di pelataran depan gapura (papan nama *Eco-Gazebo Raudhah*) seakan akan memasuki halaman. Ketuk titik di dalam halaman: avatar berjalan otomatis lewat gerbang.
