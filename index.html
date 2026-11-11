@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco-Gazebo v0.8.0</title>
+<title>Eco-Gazebo v0.8.1</title>
 <style>
 /* UMUM v0.22.0 — sinkronkan dengan Kelas Raudhah: css */
 :root{--bg:#f4f1ea;--fg:#1f2933;--card:#ffffff;--ac:#2f6f4f;--acT:#ffffff;--mut:#5f6b76;--emas:#7a5600}
@@ -160,13 +160,29 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 /* akhir UMUM css */
 /* v0.3.0 (dipindah ke luar blok UMUM di v0.3.1): sama dengan Kelas Raudhah v0.23.0: HP mendatar <= 520 px, garis pemisah laci disembunyikan supaya semua butir muat */
 @media (orientation:landscape) and (max-height:520px){#hud .lGaris{display:none}}
-/* Eco v0.8.0: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
+/* Eco v0.8.1: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
 #hudP,#hudK,#mPapan,#bBerdiri{display:none!important}
-/* Eco v0.8.0: layar masuk Google saja + pilih kelas (tombol >= 44 px, bisa digulir di HP kecil) */
-#ovl .kt{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto}#ovl h3{margin:0}.kpT{font-weight:700;margin:6px 0 0!important;color:var(--mut);font-size:13px}
-.kpG{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px}#ovl .kpB{min-height:44px;background:transparent;color:var(--fg);border:1px solid var(--mut);font-weight:700}
-#ovl .kpB[aria-checked="true"]{background:var(--ac);color:var(--acT);border-color:var(--ac)}#ovl #kpYa:disabled{opacity:.55;cursor:default}#ovl .kpLain{background:transparent;color:var(--ac);border:1px solid var(--ac)}
-#gbtn{min-height:44px}
+/* Eco v0.8.1: layar masuk & pendaftaran (Google saja). Kartu berlogo, ringkas, tombol >= 44 px, bisa digulir di HP kecil */
+#ovl{background:radial-gradient(120% 90% at 15% 10%,#3f8f63 0%,#1f5a3d 45%,#123526 100%)}
+#ovl .kt{max-width:400px;padding:0;gap:0;overflow:auto;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+#masukBox,#kelasBox{flex-direction:column;gap:12px;padding:22px 24px 6px}#masukBox{display:flex}
+#ovl #lerr{margin:0 24px}#ovl #lerr:empty{display:none}
+.ovKep{display:flex;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid rgba(128,128,128,.22)}
+.ovLogo{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#43a047,#1b5e20);color:#fff;flex:none}
+#ovl .ovMerk{font-weight:700;font-size:15px}#ovl .ovSek{font-size:13px;color:var(--mut)}
+#ovl h2{font-size:26px;letter-spacing:-.01em}#ovl h2:focus,#ovl h2:focus-visible{outline:none} /* judul hanya penanda fokus awal dialog (tabindex -1), tidak bisa dicapai Tab */
+#ovl .ovTag{color:var(--mut);line-height:1.45}
+.ovFit{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}.ovFit li{font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:rgba(67,160,71,.14);color:var(--fg)}
+.ovGaris{display:flex;align-items:center;gap:10px;color:var(--mut);font-size:13px;margin-top:4px}.ovGaris:before,.ovGaris:after{content:"";flex:1;height:1px;background:rgba(128,128,128,.3)}
+#gbtn{display:flex;justify-content:center;min-height:44px}
+#ovl .ovKet{font-size:13px;color:var(--mut);line-height:1.4}.ovTengah{text-align:center}
+#ovl .ovKaki{text-align:center;font-size:12px;color:var(--mut);padding:12px 24px 16px;border-top:1px solid rgba(128,128,128,.18);margin-top:12px}
+#ovl .ovAkun{font-size:14px;color:var(--mut)}#ovl .ovLbl{font-weight:600;font-size:14px;margin-top:4px}
+#ovl input,#ovl select{min-height:46px;font-size:16px;padding:10px 12px;border:1px solid var(--mut);border-radius:10px;background:var(--bg);color:var(--fg);width:100%;box-sizing:border-box}
+#ovl input:focus,#ovl select:focus{border-color:var(--ac);outline:2px solid var(--ac);outline-offset:0}
+#ovl #kpYa{min-height:48px;font-weight:700;margin-top:6px}#ovl #kpYa:disabled{opacity:.5;cursor:default}
+#ovl .ovSek2{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+@media (max-height:600px){#masukBox,#kelasBox{gap:8px;padding-top:14px}#ovl h2{font-size:22px}.ovFit{display:none}}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sw .ok,:root:not([data-theme="light"]) .gr .ok{color:#6fcf97}}:root[data-theme="dark"] .sw .ok,:root[data-theme="dark"] .gr .ok{color:#6fcf97}
 #ovl a{color:var(--ac)} /* tautan layar masuk terbaca di tema gelap (sama dengan Kelas Raudhah v0.23.0) */
 #konfK.pindah .kIk{background:var(--lHm);color:var(--lHt)}#konfK.pindah #kYa{background:#2f6f4f;color:#fff}
@@ -213,7 +229,7 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 <a-entity id="dunia"></a-entity>
 </a-scene>
 </template>
-<script src="eco_v0.8.0.js"></script>
-<!-- akhir Eco-Gazebo v0.8.0 -->
+<script src="eco_v0.8.1.js"></script>
+<!-- akhir Eco-Gazebo v0.8.1 -->
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.8.0-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.8.1-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
@@ -12,6 +12,11 @@
 - Guru Adiwiyata = **admin** (mengatur kelas & murid, menyetujui laporan, rekap). Eco memakai **server dan spreadsheet sendiri**, terpisah dari Kelas Raudhah.
 - Saat pertama masuk, kamu berdiri **di depan gapura** halaman Eco; ketuk tanah di dalam halaman untuk berjalan masuk lewat gerbang.
 - Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk **meja timbang** atau **papan nilai poin** di Bank Sampah untuk Buku Tabungan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **bedeng** untuk Kebun Simulasi, **tutup sumur** untuk Sumur Resapan, **kotak panel** di dinding kanan gazebo untuk PLTS, **rumah hidroponik** untuk Hidroponik NFT, **bedeng/papan Taman TOGA** untuk mengenal tanaman obat keluarga, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+
+## Baru di v0.8.1
+- **Layar masuk baru** yang lebih rapi (logo, ringkasan fitur, satu tombol Google).
+- **Pendaftaran murid**: masuk dengan Gmail, lalu tulis **nama panggilan** dan pilih **kelas** dari daftar (mis. *Ken*, *kelas 7a*). Nama panggilan tampil di Eco-Gazebo.
+- Server Eco v1.0.1: menyimpan nama panggilan; impor data mengenali nama kelas "kelas 7a".
 
 ## Baru di v0.8.0
 - **Server Eco sendiri** (Google Apps Script `Code_eco v1.0.0` + spreadsheet *Eco-Gazebo Data*). Data Adiwiyata lama (kelas, laporan, timbangan, kader, jenis sampah) disalin sekali dari Kelas Raudhah.
