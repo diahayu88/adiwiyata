@@ -2,7 +2,7 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.9.0-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.9.1-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
@@ -12,6 +12,12 @@
 - Guru Adiwiyata = **admin** (mengatur kelas & murid, menyetujui laporan, rekap). Eco memakai **server dan spreadsheet sendiri**, terpisah dari Kelas Raudhah.
 - Saat pertama masuk, kamu berdiri **di depan gapura** halaman Eco; ketuk tanah di dalam halaman untuk berjalan masuk lewat gerbang.
 - Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk **meja timbang** atau **papan nilai poin** di Bank Sampah untuk Buku Tabungan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **papan petak** di bedeng untuk Kebun Simulasi, **tutup sumur** untuk Sumur Resapan, **kotak panel** di dinding kanan gazebo untuk PLTS, **rumah hidroponik** untuk Hidroponik NFT, **bedeng/papan Taman TOGA** untuk mengenal tanaman obat keluarga, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+
+## Baru di v0.9.1
+- **Galeri 3 meja**: meja kiri, tengah, dan kanan gazebo masing-masing memamerkan satu karya, dengan papan nama karya (judul + pembuat) di tepi meja.
+- **Pameran pilihan guru**: admin memilih karya untuk tiap meja; karya itu muncul otomatis untuk semua pengunjung saat mendekati gazebo.
+- Pengunjung tetap bisa **menaruh karya lain** di meja mana pun (hanya di layarnya) dan kembali ke pameran guru kapan saja.
+- Batas karya baru: **≤ 5 MB dan ≤ 100 ribu segitiga** supaya tiga karya tetap lancar di HP. Berkas karya disimpan di peramban setelah diunduh pertama kali (hemat kuota).
 
 ## Baru di v0.9.0
 - **Galeri karya 3D + AR**: papan **GALERI KARYA 3D** di meja tengah gazebo. Murid memindai karya daur ulangnya dengan aplikasi HP gratis (KIRI Engine, RealityScan, Polycam), mengekspor **.glb** (≤ 8 MB, ≤ 300 ribu segitiga), lalu mengunggahnya. Guru menyetujui di tab **Tinjau**.
