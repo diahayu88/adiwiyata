@@ -2,7 +2,7 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.8.1-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.9.0-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
@@ -11,7 +11,16 @@
 - Masuk dengan **akun Google (Gmail)**. Setiap Gmail otomatis menjadi **murid**; saat pertama masuk, murid **memilih kelasnya** sendiri.
 - Guru Adiwiyata = **admin** (mengatur kelas & murid, menyetujui laporan, rekap). Eco memakai **server dan spreadsheet sendiri**, terpisah dari Kelas Raudhah.
 - Saat pertama masuk, kamu berdiri **di depan gapura** halaman Eco; ketuk tanah di dalam halaman untuk berjalan masuk lewat gerbang.
-- Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk **meja timbang** atau **papan nilai poin** di Bank Sampah untuk Buku Tabungan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **bedeng** untuk Kebun Simulasi, **tutup sumur** untuk Sumur Resapan, **kotak panel** di dinding kanan gazebo untuk PLTS, **rumah hidroponik** untuk Hidroponik NFT, **bedeng/papan Taman TOGA** untuk mengenal tanaman obat keluarga, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+- Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk **meja timbang** atau **papan nilai poin** di Bank Sampah untuk Buku Tabungan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **papan petak** di bedeng untuk Kebun Simulasi, **tutup sumur** untuk Sumur Resapan, **kotak panel** di dinding kanan gazebo untuk PLTS, **rumah hidroponik** untuk Hidroponik NFT, **bedeng/papan Taman TOGA** untuk mengenal tanaman obat keluarga, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+
+## Baru di v0.9.0
+- **Galeri karya 3D + AR**: papan **GALERI KARYA 3D** di meja tengah gazebo. Murid memindai karya daur ulangnya dengan aplikasi HP gratis (KIRI Engine, RealityScan, Polycam), mengekspor **.glb** (≤ 8 MB, ≤ 300 ribu segitiga), lalu mengunggahnya. Guru menyetujui di tab **Tinjau**.
+- Setiap pengunjung memilih karya: **Tampilkan di meja** (model muncul di meja gazebo, di layarnya sendiri) atau **Lihat di AR** (Chrome Android dengan ARCore, Safari iPhone).
+- Model terkompresi Draco didukung (dekoder di folder `draco/`, tanpa CDN). Server Eco v1.2.0 menyimpan berkas di Google Drive sekolah.
+
+## Baru di v0.8.2
+- **Kebun bersama 3 petak**: papan **"Ditanam oleh … · kelas · tanaman"** di tiap petak. Satu murid satu petak; petak terkunci sampai panen atau mati; murid lain hanya melihat. Alat ukur kelembapan di setiap petak.
+- Admin: **Durasi tanam** (15 / 30 / 60 menit per siklus kangkung, atau harian nyata) dan **Kosongkan petak** di menu Admin & pengaturan.
 
 ## Baru di v0.8.1
 - **Layar masuk baru** yang lebih rapi (logo, ringkasan fitur, satu tombol Google).
