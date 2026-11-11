@@ -2,16 +2,22 @@
 
 **Ruang 3D Adiwiyata di browser**: lapor sampah (botol, kertas, Kompos MBG dengan foto yang dikenali AI), persetujuan kader/guru, catat timbangan, papan poin rombel, ringkasan Kompos MBG, dan rekap CSV. Aplikasi pendamping **Kelas Raudhah**, dipisah menjadi aplikasi sendiri pada 31/10/2026.
 
-![Versi](https://img.shields.io/badge/versi-v0.7.2-2f6f4f)
+![Versi](https://img.shields.io/badge/versi-v0.8.0-2f6f4f)
 ![Platform](https://img.shields.io/badge/platform-web%20(tanpa%20instal)-8ecae6)
 ![Hosting](https://img.shields.io/badge/hosting-GitHub%20Pages-181717)
 ![Backend](https://img.shields.io/badge/backend-Google%20Apps%20Script%20(bersama%20Kelas%20Raudhah)-4285F4)
 
 ## Tentang
-- Siswa dan guru masuk dengan **akun Kelas Raudhah yang sama** (Google, akun sandi, kode kelas, atau Menu Juri).
-- Bila dibuka dari Kelas Raudhah (butir menu **Eco-Gazebo ↗**) di tab yang sama, siswa **tidak perlu masuk ulang**.
+- Masuk dengan **akun Google (Gmail)**. Setiap Gmail otomatis menjadi **murid**; saat pertama masuk, murid **memilih kelasnya** sendiri.
+- Guru Adiwiyata = **admin** (mengatur kelas & murid, menyetujui laporan, rekap). Eco memakai **server dan spreadsheet sendiri**, terpisah dari Kelas Raudhah.
 - Saat pertama masuk, kamu berdiri **di depan gapura** halaman Eco; ketuk tanah di dalam halaman untuk berjalan masuk lewat gerbang.
 - Di dalam ruang 3D: ketuk tanah untuk berjalan, ketuk **meja timbang** atau **papan nilai poin** di Bank Sampah untuk Buku Tabungan, ketuk tong di **Bank Sampah** untuk melapor, ketuk **bedeng** untuk Kebun Simulasi, **tutup sumur** untuk Sumur Resapan, **kotak panel** di dinding kanan gazebo untuk PLTS, **rumah hidroponik** untuk Hidroponik NFT, **bedeng/papan Taman TOGA** untuk mengenal tanaman obat keluarga, gunakan menu ☰ → *Beranda* untuk kembali ke halaman beranda.
+
+## Baru di v0.8.0
+- **Server Eco sendiri** (Google Apps Script `Code_eco v1.0.0` + spreadsheet *Eco-Gazebo Data*). Data Adiwiyata lama (kelas, laporan, timbangan, kader, jenis sampah) disalin sekali dari Kelas Raudhah.
+- **Masuk hanya dengan Gmail**: tidak ada lagi akun sandi, kode kelas, daftar manual, maupun Menu Juri.
+- **Murid memilih kelas** saat pertama masuk; pindah kelas dilakukan admin.
+- Menu admin baru: **Kelola kelas & murid** (buat kelas, sembunyikan kelas, pindah/nonaktifkan murid) dan **Admin & pengaturan** (tambah/lepas admin, log, takaran kompos).
 
 ## Baru di v0.7.2
 - **Monumen Adiwiyata Mandiri kini model 3D asli** (hasil pindaian, berkas `model/monumen_adiwiyata_v1.glb`), berdiri di samping kebun sayur (bekas tempat komposter), menghadap gerbang. Ketuk monumen atau plakatnya untuk mengenal jenjang Adiwiyata. Bila model gagal dimuat, monumen sederhana tetap tampil.

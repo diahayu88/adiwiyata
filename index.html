@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eco-Gazebo v0.7.2</title>
+<title>Eco-Gazebo v0.8.0</title>
 <style>
 /* UMUM v0.22.0 — sinkronkan dengan Kelas Raudhah: css */
 :root{--bg:#f4f1ea;--fg:#1f2933;--card:#ffffff;--ac:#2f6f4f;--acT:#ffffff;--mut:#5f6b76;--emas:#7a5600}
@@ -160,8 +160,14 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 /* akhir UMUM css */
 /* v0.3.0 (dipindah ke luar blok UMUM di v0.3.1): sama dengan Kelas Raudhah v0.23.0: HP mendatar <= 520 px, garis pemisah laci disembunyikan supaya semua butir muat */
 @media (orientation:landscape) and (max-height:520px){#hud .lGaris{display:none}}
-/* Eco v0.7.2: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
+/* Eco v0.8.0: butir Kelas Raudhah yang tidak dipakai di Eco disembunyikan; konfirmasi pindah berwarna hijau */
 #hudP,#hudK,#mPapan,#bBerdiri{display:none!important}
+/* Eco v0.8.0: layar masuk Google saja + pilih kelas (tombol >= 44 px, bisa digulir di HP kecil) */
+#ovl .kt{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto}#ovl h3{margin:0}.kpT{font-weight:700;margin:6px 0 0!important;color:var(--mut);font-size:13px}
+.kpG{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px}#ovl .kpB{min-height:44px;background:transparent;color:var(--fg);border:1px solid var(--mut);font-weight:700}
+#ovl .kpB[aria-checked="true"]{background:var(--ac);color:var(--acT);border-color:var(--ac)}#ovl #kpYa:disabled{opacity:.55;cursor:default}#ovl .kpLain{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+#gbtn{min-height:44px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sw .ok,:root:not([data-theme="light"]) .gr .ok{color:#6fcf97}}:root[data-theme="dark"] .sw .ok,:root[data-theme="dark"] .gr .ok{color:#6fcf97}
 #ovl a{color:var(--ac)} /* tautan layar masuk terbaca di tema gelap (sama dengan Kelas Raudhah v0.23.0) */
 #konfK.pindah .kIk{background:var(--lHm);color:var(--lHt)}#konfK.pindah #kYa{background:#2f6f4f;color:#fff}
 /* Eco v0.4.0: panel Kebun Simulasi (F1). HP tegak: panel ringkas 44 % layar supaya bedeng (kamera setinggi tanaman) tetap terlihat di atasnya */
@@ -207,7 +213,7 @@ body.konfBuka #joy,body.konfBuka #bBer,body.konfBuka .bp,body.konfBuka #bVRx{vis
 <a-entity id="dunia"></a-entity>
 </a-scene>
 </template>
-<script src="eco_v0.7.2.js"></script>
-<!-- akhir Eco-Gazebo v0.7.2 -->
+<script src="eco_v0.8.0.js"></script>
+<!-- akhir Eco-Gazebo v0.8.0 -->
 </body>
 </html>
